@@ -7,7 +7,7 @@ docker-compose up;
 http://localhost:8001/docs
 
 # 2) создать базу данных для тестов
-docker exec -i postgres psql -h localhost -p 5432 -U postgres -d Delivery -c "CREATE DATABASE Delivery_test;"  
+docker exec -i postgres psql -h localhost -p 5432 -U postgres -d Delivery -c "CREATE DATABASE delivery_test;"  
 
 # 3) запустить тесты
 docker exec -i delivery pytest tests -s  
